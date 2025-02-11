@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price</title>
+    <!-- Incluir o Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <div class="card shadow-sm p-4">
+            <h1 class="text-center mb-4 text-primary">Preço Atual do Bitcoin</h1>
+            <p class="text-center text-muted">Data: <%= date %></p>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Preço USD -->
+                <div class="col-md-3">
+                    <div class="card text-center p-4">
+                        <h2 class="card-title text-primary">USD</h2>
+                        <p class="card-text fs-3"><%= usdPrice %></p>
+                    </div>
+                </div>
+
+                <!-- Preço EUR -->
+                <div class="col-md-3">
+                    <div class="card text-center p-4">
+                        <h2 class="card-title text-primary">EUR</h2>
+                        <p class="card-text fs-3"><%= eurPrice %></p>
+                    </div>
+                </div>
+
+                <!-- Preço GBP -->
+                <div class="col-md-3">
+                    <div class="card text-center p-4">
+                        <h2 class="card-title text-primary">GBP</h2>
+                        <p class="card-text fs-3"><%= gbpPrice %></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <a href="/" class="btn btn-primary">Voltar para a página principal</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir o Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
